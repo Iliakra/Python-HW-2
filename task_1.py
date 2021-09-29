@@ -1,2 +1,1 @@
-a = 3
-print(a)
+exp_1 = 'switch'
