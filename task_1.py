@@ -1,2 +1,2 @@
-c = 4
-print(c)
+a = 3
+print(a)
