@@ -1,1 +1,2 @@
-exp_1 = 'switch'
+c = 4
+print(c)
