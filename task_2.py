@@ -4,16 +4,13 @@
 необходимо использовать функцию input().
 """
 
-input_values = input("Введите элементы списка через запятую  ")
-my_list = input_values.split(",")
-print(my_list)
+input_values = input("Введите элементы списка через пробел  ")
+my_list = input_values.split()
+len_my_list = len(my_list)
 
-for item in my_list:
-    item_index = my_list.index(item)
-    if item_index % 2 != 0:
-        prev_item_value = my_list[item_index-1]
-        prev_item_index = item_index-1
-        my_list[prev_item_index] = item
-        my_list[item_index] = prev_item_value
+i = 0
+while i < len_my_list - 1:
+    my_list[i], my_list[i+1] = my_list[i+1], my_list[i]
+    i += 2
 
 print(my_list)

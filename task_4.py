@@ -5,6 +5,5 @@
 
 user_str = input("Введите строку из нескольких слов, разделенных пробелами   ")
 string_list = user_str.split(' ')
-for index, value in enumerate(string_list):
-    word = value[:10]
-    print(f"{index+1}.{word} \n")
+for index, word in enumerate(string_list):
+    print(f"{index+1}.{word[:10]} \n")
